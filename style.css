@@ -329,6 +329,7 @@ a:hover {
 }
 
 #sidebar li li {
+	cursor: pointer;
 	line-height: 40px;
 	border-bottom: 1px solid #E7EBED;
 	margin: 0px 0px;
