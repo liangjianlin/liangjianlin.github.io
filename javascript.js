@@ -1,5 +1,5 @@
 window.onload = function (argument) {
-	for (var i = 7; i >= 1; i--) {
+	for (var i = 8; i >= 1; i--) {
 		list_menu('list' + i, 'list-item-' + i);
 	}
 }
@@ -13,7 +13,7 @@ function list_menu(list, list_item) {
 	var l = document.getElementById(list);
 	l.onclick = function() {
 		var l_item = document.getElementById(list_item);
-		if (l_item.style.display == 'none') {
+		if (l_item.style.display == 'none' || l_item.style.display == '') {
 			l_item.style.display = 'block';
 		} else {
 			l_item.style.display = 'none';
