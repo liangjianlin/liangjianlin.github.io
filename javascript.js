@@ -1,5 +1,5 @@
 window.onload = function (argument) {
-	for (var i = 6; i >= 1; i--) {
+	for (var i = 7; i >= 1; i--) {
 		list_menu('list' + i, 'list-item-' + i);
 	}
 }
