@@ -34,20 +34,51 @@
 	<div id="page">
 		<div id="content">
 			<div class="post" id="json">
-				<h2 class="title"><a href="#">JSON简介</a></h2>
+				<h2 class="title"><a href="#json">JSON简介</a></h2>
 				<p class="meta"><span class="date">2016-8-27</span><span class="posted">Posted by <a href="./contact.html">liangjianlin</a></span></p>
 				<div style="clear: both;">&nbsp;</div>
 				<div class="entry">
-					<p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。它使得人们很容易的进行阅读和编写。同时也方便了机器进行解析和生成。</p>
+					<p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。它使得人们很容易的进行阅读和编写。同时也方便了机器进行解析和生成。
+					</p>
+					JSON的数据类型
+					<p>
+						<ul>
+							<li>数字：<strong>123</strong></li>
+							<li>字符串：<strong>"string"</strong></li>
+							<li>对象：<strong>{"name":"zhangsan"}</strong></li>
+							<li>数组：<strong>["zhangsan","lisi"]</strong></li>
+							<li>空值：<strong>null</strong></li>
+							<li>布尔值：<strong>false true</strong></li>
+						</ul>
+					</p>
+					例子：
+					<p>
+						<strong>{"people":[{"name":"zhangsan","age":18,"bool":false},{"name":"lisi","age":20,"bool":true}],"is":null}</strong>
+					</p>
 				</div>
 			</div>
-			<div hidden class="post">
-				<h2 class="title"><a href="#">Lorem ipsum sed aliquam</a></h2>
-				<p class="meta"><span class="date">April 04, 2013</span><span class="posted">Posted by <a href="#">Someone</a></span></p>
+			<div class="post" id="transaction">
+				<h2 class="title"><a href="#transaction">事务</a></h2>
+				<p class="meta"><span class="date">2016-8-31</span><span class="posted">Posted by <a href="./contact.html">liangjianlin</a></span></p>
 				<div style="clear: both;">&nbsp;</div>
 				<div class="entry">
-					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in,  ut, lobortis a, est.</p>
-					<p class="links"><a href="./articledetails.html" class="more">更多</a></p>
+					<p>
+						事务的特性: 酸(ACID)
+						<ol>
+							<li>原子性(Atomicity)
+								<p>事务执行的动作是不可再分的，事务要么执行该事务的所有操作，要么是完全不执行事务的所有操作。</p>
+							</li>
+							<li>一致性(Consistency)
+								<p>事务执行前处于状态1，执行完事务后转换到状态2。</p>
+							</li>
+							<li>隔离性(Isolation)
+								<p>事务跟其它的事务是隔离的，不互相影响。</p>
+							</li>
+							<li>持久性(Durability)
+								<p>事务完成后，事务的操作所作的改变将永久存在。</p>
+							</li>
+						</ol>
+					</p>
 				</div>
 			</div>
 			<div hidden class="post">
@@ -76,7 +107,7 @@
                   <li id="list2"><h2>MySql</h2></li>
                      <div hidden id="list-item-2">
                         <ul>
-                           <li><a href="#">暂无</a></li>
+                           <li><a href="#transaction">事务</a></li>
                         </ul>
                      </div>
                   <li id="list3"><h2>Sql</h2></li>
