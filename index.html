@@ -81,13 +81,36 @@
 					</p>
 				</div>
 			</div>
-			<div hidden class="post">
-				<h2 class="title"><a href="#">Lorem ipsum sed aliquam</a></h2>
-				<p class="meta"><span class="date">April 01, 2013</span><span class="posted">Posted by <a href="#">Someone</a></span></p>
+			<div class="post" id="git">
+				<h2 class="title"><a href="#git">GIT简单使用</a></h2>
+				<p class="meta"><span class="date">2016-9-4</span><span class="posted">Posted by <a href="#">liangjianlin</a></span></p>
 				<div style="clear: both;">&nbsp;</div>
 				<div class="entry">
-					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in,  ut, lobortis a, est.</p>
-					<p class="links"><a href="./articledetails.html" class="more">更多</a></p>
+					<p>
+						<ol>
+							<li>配置用户名：<p>git --global user.name 'liangjianlin'</p></li>
+							<li>配置用户邮箱：<p>git --global user.email 'nbaliangjianlin@qq.com'</p></li>
+							<li>把GitHub上的库pull到本地：<p>git pull git@github.com:liangjianlin/liangjianlin.github.io.git</p></li>
+							<li>添加修改：<p>git add . / 某个已修改或者新增的文件</p></li>
+							<li>提交：<p>git commit -m "MyCommit"</p></li>
+							<li>把修改push到GitHub上的库：<p>git push git@github.com:liangjianlin/liangjianlin.github.io.git</p></li>
+						</ol>
+					</p>
+				</div>
+			</div>
+			<div class="post" id="sql">
+				<h2 class="title"><a href="#sql">Sql语句</a></h2>
+				<p class="meta"><span class="date">2016-9-4</span><span class="posted">Posted by <a href="#">liangjianlin</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<p>
+						<ol>
+							<li>增：<p>insert into tablename(column1,column2,...) value(value1,value2,...);</p></li>
+							<li>删：<p>delete from tablename where column1 = value1;</p></li>
+							<li>改：<p>alter tablename set column2 = value3 where column1 = value1;</p></li>
+							<li>查：<p>select * from tablename where column1 = value1;</p></li>
+						</ol>
+					</p>
 				</div>
 			</div>
 			<div style="clear: both;">&nbsp;</div>
@@ -113,7 +136,7 @@
                   <li id="list3"><h2>Sql</h2></li>
                      <div hidden id="list-item-3">
                         <ul>
-                           <li><a href="#">暂无</a></li>
+                           <li><a href="#sql">Sql语句</a></li>
                         </ul>
                      </div>
                   <li id="list4"><h2>JSON</h2></li>
@@ -145,6 +168,12 @@
                         <ul>
                            <li><a href="#">暂无</a></li>
                         </ul>
+                     </div>
+                   <li id="list9"><h2>GIT</h2></li>
+                     <div hidden id="list-item-9">
+                     	<ul>
+                     		<li><a href="#git">GIT简单用法</a></li>
+                     	</ul>
                      </div>
 					</ul>
 				</li>
